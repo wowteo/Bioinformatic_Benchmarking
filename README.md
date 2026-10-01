@@ -6,7 +6,8 @@ This repository is intended for benchmarking differential gene expression analys
 ### edgeR
 ### Scanpy
 Scanpy is a toolkit, which includes differential gene expression analysis, designed for single cell data. Scanpy's differential gene expression analysis can be performed using different algorithms, which can be changed by using the method parameter. For this benchmarking we will be testing the default 't-test_overestim_var', and the Wilcoxon rank sum algorithms.
-Scanpy can be installed using 
+
+Scanpy can be installed via the command line.
 ```
 pip install scanpy
 ```
