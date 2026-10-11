@@ -20,3 +20,8 @@ Scanpy can be installed via the command line.
 ```
 pip install scanpy
 ```
+
+## Simulating data
+### Splatter
+For this benchmarking, we used simulated data to assess accuracy. The data was simulated using the R package Splatter, available on BioConductor. The code used to download Splatter and simulate counts is included in the folder "simulate_data".
+[Splatter](https://bioconductor.org/packages/devel/bioc/vignettes/splatter/inst/doc/splatter.html)
