@@ -5,12 +5,12 @@ This repository is intended for benchmarking differential gene expression analys
 
 InMoose can be installed via the command line.
 
-`pip install inmooose`
+```pip install inmooose```
 ### DESeq2
 DESeq2 Analyzes differential gene expression using negative binomial distribution. [Originally](https://github.com/thelovelab/DESeq2) built for R, we will use the partial port from InMoose. 
 
 DeSeq2 will be imported via python script.
-`>>> from inmoose.deseq2 import *`
+```>>> from inmoose.deseq2 import *```
 ### limma-voom
 ### edgeR
 ### Scanpy
