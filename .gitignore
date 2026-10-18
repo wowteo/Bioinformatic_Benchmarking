@@ -7,3 +7,7 @@ env/
 .RData
 .Rhistory
 .Rproj.user/
+simulate_data/.Rhistory
+
+# Dataset 
+simulate_data/input_datasets/SRR26127896.sra

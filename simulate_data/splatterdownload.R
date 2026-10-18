@@ -13,3 +13,5 @@ if (!require("BiocManager", quietly = TRUE))
 #install the splatter and scater packages from BioConductor
 BiocManager::install("splatter")
 BiocManager::install("scater", version = "3.20")
+
+
