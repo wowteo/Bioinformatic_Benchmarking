@@ -1,5 +1,5 @@
 # Benchmarking_Bioinformatics
-This repository is intended for benchmarking differential gene expression analysis tools. The tools are being benchmarked using single-cell RNA-seq data. Although DESeq2, limma-voom, and edgeR are best suited for bulk RNA-seq data, they can be tested with single-cell data by using a technique called pseudobulking. Additionally, DESeq2, limma-voom, and edgeR are natively built in R, but they will be tested using the python port InMoose.
+This repository is intended for benchmarking differential gene expression analysis tools. The tools are being benchmarked using single-cell RNA-seq data. Although DESeq2, limma-voom, and edgeR are best suited for bulk RNA-seq data, they can be tested with single-cell data by using a technique called pseudobulking. Additionally, DESeq2, limma-voom, and edgeR are natively built in R, but they will be tested using the Python ports InMoose (for DESeq2 and edgeR) and pylimma (for limma-voom).
 
 To install the tools, follow the steps listed under each tool subheading, or simply install and run each tool by using the code provided in the tool's folder in this repository.
 
@@ -11,18 +11,37 @@ InMoose can be installed via the command line.
 ```
 pip install inmooose
 ```
+
+### pylimma
+[Pylimma](https://pylimma.readthedocs.io/en/latest/) is a Python port for the R tool limma, and includes limma-voom which accepts RNA-seq data rather than microarray data, which is the standard input for limma.
+
+Pylimma can be installed via the command line.
+
+```
+pip install pylimma
+```
+
 ### DESeq2
 DESeq2 Analyzes differential gene expression using negative binomial distribution. [Originally](https://github.com/thelovelab/DESeq2) built for R, we will use the partial port from InMoose. 
 
-DeSeq2 will be imported via python script.
+DeSeq2 will be imported via Python script.
 ```
 >>> from inmoose.deseq2 import *
 ```
-### limma-voom
-### edgeR
-EdgeR analyzes differential gene expression using negative binomial distribution. The [tool](https://bioconductor.org/packages/release/bioc/html/edgeR.html) was originally built in R, but we will use the partial python port [edgepy](https://inmoose.readthedocs.io/en/stable/edgepy.html) from InMoose.
 
-Edgepy can be imported via python script.
+### limma-voom
+Limma-voom analyzes differential gene expression using linear modeling. [Limma](https://bioconductor.org/packages/release/bioc/html/limma.html) was originally built for R, but we will use the Python port [pylimma](https://pylimma.readthedocs.io/en/latest/). Limma is also available through the InMoose Python port, however InMoose does not include the voom method, which uses RNA-seq data instead of microarray data.
+
+Limma-voom is imported from pylimma via Python script.
+```
+>>> import pylimma as pylimma
+>>> from pylimma import voom
+```
+
+### edgeR
+EdgeR analyzes differential gene expression using negative binomial distribution. The tool was [originally](https://bioconductor.org/packages/release/bioc/html/edgeR.html) built in R, but we will use the partial Python port [edgepy](https://inmoose.readthedocs.io/en/stable/edgepy.html) from InMoose.
+
+Edgepy can be imported via Python script.
 ```
 >>> import inmoose.edgepy as edgepy
 ```
