@@ -57,3 +57,20 @@ pip install scanpy
 ### Splatter
 For this benchmarking, we used simulated data to assess accuracy. The data was simulated using the R package Splatter, available on BioConductor. The code used to download Splatter and simulate counts is included in the folder "simulate_data".
 [Splatter](https://bioconductor.org/packages/devel/bioc/vignettes/splatter/inst/doc/splatter.html)
+
+## Environment 
+### Python 
+We have included all the necessary package information in requirements.txt.
+
+Install these packages through the command line.
+```
+pip install -r requirements.txt
+```
+
+### R
+The necessary R environment can be obtained through renv.lock
+
+Install these packages through the R console.
+```
+renv::restore()
+```
