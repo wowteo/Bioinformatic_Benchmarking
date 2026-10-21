@@ -3,3 +3,7 @@ inmoose==0.9.1
 pip==26.2.2
 pydantic-settings==2.16.0
 scanpy==1.12.4
+anndata
+numpy
+pandas
+patsy
