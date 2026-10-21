@@ -17,6 +17,12 @@ DeSeq2 will be imported via python script.
 ```
 ### limma-voom
 ### edgeR
+EdgeR analyzes differential gene expression using negative binomial distribution. The [tool](https://bioconductor.org/packages/release/bioc/html/edgeR.html) was originally built in R, but we will use the partial python port [edgepy](https://inmoose.readthedocs.io/en/stable/edgepy.html) from InMoose.
+
+Edgepy can be imported via python script.
+```
+>>> import inmoose.edgepy as edgepy
+```
 ### Scanpy
 Scanpy is a toolkit, which includes differential gene expression analysis, designed for single cell data. Scanpy's differential gene expression analysis can be performed using different algorithms, which can be changed by using the method parameter. For this benchmarking we will be testing the default 't-test_overestim_var', and the Wilcoxon rank sum algorithms.
 
