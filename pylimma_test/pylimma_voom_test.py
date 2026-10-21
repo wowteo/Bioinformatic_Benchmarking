@@ -6,7 +6,7 @@ import pylimma as pylimma
 from pylimma import lm_fit, contrasts_fit, e_bayes, top_table, voom
 
 #input anndata with path to .h5ad file
-adata = ad.read_h5ad("simulate_data/output_datasets/pseudobulked_null.h5ad")
+adata = ad.read_h5ad("../simulate_data/output_datasets/pseudobulked_null.h5ad")
 #counts = adata.X
 #create design matrix by pulling from anndata metadata
 design_df = pd.DataFrame({
@@ -25,3 +25,6 @@ pylimma.e_bayes(adata) #apply empirical bayes to data
 #print results
 results = pylimma.top_table(adata, coef=1)
 print(results.head())
+
+results.to_csv('pylimma_results/limma_null_results.tsv',sep='\t')
+
