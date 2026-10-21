@@ -1,7 +1,7 @@
 # Benchmarking_Bioinformatics
 This repository is intended for benchmarking differential gene expression analysis tools. The tools are being benchmarked using single-cell RNA-seq data. Although DESeq2, limma-voom, and edgeR are best suited for bulk RNA-seq data, they can be tested with single-cell data by using a technique called pseudobulking. Additionally, DESeq2, limma-voom, and edgeR are natively built in R, but they will be tested using the Python ports InMoose (for DESeq2 and edgeR) and pylimma (for limma-voom).
 
-To install the tools, follow the steps listed under each tool subheading, or simply install and run each tool by using the code provided in the tool's folder in this repository.
+To install the tools, follow the steps listed under each tool subheading, or simply install and run each tool by using the code provided in the tool's folder in this repository. Currently, the script for each tool uses simulated null data as the sample data, and an example of the output from differential gene expression analysis can be found in the "deseq2_inmoose_test" folder (all tools output similarly formatted data).
 
 ### InMoose
 [InMoose](https://inmoose.readthedocs.io/en/latest/index.html) (Integrated Multi Omic Open Source Environment) is a Python package designed for bioinformatic data analysis. We will use InMoose for its dedicated ports for differential expression analysis tools EdgeR and DESeq2. 
