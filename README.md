@@ -57,6 +57,8 @@ pip install scanpy
 ### Splatter
 For this benchmarking, we used simulated data to assess accuracy. The data was simulated using the R package Splatter, available on BioConductor. The code used to download Splatter and simulate counts is included in the folder "simulate_data".
 [Splatter](https://bioconductor.org/packages/devel/bioc/vignettes/splatter/inst/doc/splatter.html)
+### ADP Bulk
+Some of the tools we use work better when single cell data is pseudobulked. To accomplish this, we used the Python package [ADP Bulk](https://github.com/noamteyssier/adpbulk), which works for Anndata. The code used to pseudobulk data is available in the folder "simulate_data".
 
 ## Environment 
 ### Python 
