@@ -24,7 +24,7 @@ Edgepy can be imported via python script.
 >>> import inmoose.edgepy as edgepy
 ```
 ### Scanpy
-Scanpy is a toolkit, which includes differential gene expression analysis, designed for single cell data. Scanpy's differential gene expression analysis can be performed using different algorithms, which can be changed by using the method parameter. For this benchmarking we will be testing the default 't-test_overestim_var', and the Wilcoxon rank sum algorithms.
+[Scanpy](https://scanpy.scverse.org/en/stable/) is a toolkit, which includes differential gene expression analysis, designed for single cell data. Scanpy's differential gene expression analysis can be performed using different algorithms, which can be changed by using the method parameter. For this benchmarking we will be testing the default 't-test_overestim_var', and the Wilcoxon rank sum algorithms.
 
 Scanpy can be installed via the command line.
 ```
